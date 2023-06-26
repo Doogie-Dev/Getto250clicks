@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get to 250 clicks</title>
+  <link rel="stylesheet" href="sus.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.5/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+    margin: 10px;
+}
+.box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px solid black;
+    border-radius: 500px;
+    text-align: center;
+}
+strong {
+    color: black;
+    font-size: 41px;
+    position: relative;
+    top: 72px;
+}
+.btn{
+    color: dodgerblue !important;
+}
+.btn-link {
+    color: dodgerblue;
+}
+  </style>
+</head>
+  <body>
+    <script>
+      // Function to increment the counter
+      function incrementCounter() {
+        // Get the paragraph element
+        var counterElement = document.getElementById('counter');
+  
+        // Get the current counter value and convert it to a number
+        var currentCounter = parseInt(counterElement.innerHTML);
+  
+        // Increment the counter by 1
+        var newCounter = currentCounter + 1;
+  
+        // Update the paragraph element with the new counter value
+        counterElement.innerHTML = newCounter;
+  
+        // Check if the counter reaches 1,000
+        if (newCounter === 250) {
+          // Redirect to the desired link
+          window.location.href = 'https://www.youtube.com/watch?v=94JbTCceZo0&ab_channel=doogiegaming';
+        }
+      }
+    </script>
+  <center>
+      <button class="btn btn-link" onclick="incrementCounter()">
+      <div class="box">
+        <h1><strong>Click for No Reason</strong></h1>
+      </div>
+      </button>
+  </center>
+  <p>Counter: <span id="counter">0</span></p>
+  <h2>Yay!</h2>
+  <iframe width="420" height="345" src="https://www.youtube.com/watch?v=14OxMKRFhDc&ab_channel=doogiegaming">
+  </iframe>  
+  <p>Link to the instruction video If the one above dont work</p>
+  <button class="btn btn link"><a target="_blank" href="https://www.youtube.com/watch?v=14OxMKRFhDc&ab_channel=doogiegaming">Link</a></button>
+  <p>Loading my bitches</p>
+  <span class="loading loading-infinity loading-lg"></span>
+  </body>
+</html>
